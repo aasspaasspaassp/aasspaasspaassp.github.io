@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 18px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 200px 120px 1fr;
+    grid-template-areas:
+    "nav decoration content";
+    height: 100vh;
+}
+
+ul{
+    list-style: none;
+}
+
+.a_section {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    grid-area: nav;
+}
+
+.c_section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fill 1fr);
+    grid-template-areas:
+    "adorno-g adorno-g adorno-g"
+    "adorno-g adorno-g adorno-g"
+    "radio-coapa radio-coapa radio-coapa"
+    "radio-coapa radio-coapa radio-coapa"
+    "energia-increible energia-increible energia-increible"
+    "energia-increible energia-increible energia-increible"
+    "energia-increible energia-increible energia-increible"
+    "dark-new-age dark-new-age ............"
+    "dark-new-age dark-new-age ............"
+    "dark-new-age dark-new-age ............"
+    "...... adorno-ch adorno-ch"
+    "...... adorno-ch adorno-ch"
+    "CECTA CECTA CECTA"
+    "stream stream stream"
+    "stream stream stream"
+    "stream stream stream";
+    grid-row-gap: 4px;
+    margin: 4px;
+    overflow-y: scroll;
+    grid-area: content;
+}
+
+
+.b_section {
+
+    background: radial-gradient(ellipse closest-side, white 5% , rgb(31, 200, 105) 10%, rgba(200, 57, 49, 0.2), pink);
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#logo{
+    background: radial-gradient(to right, pink, green);
+    margin: 10px;
+    padding-left: 20px;
+    height: 30px;
+}
+
+
+
+#adorno-chico{
+    background: radial-gradient(to right, pink, green);
+    border: 2px solid black;
+    margin: 10px;
+    grid-area: adorno-ch;
+
+}
+
+#energia-increible{
+    grid-area: energia-increible;
+}
+
+#dark-new-age {
+    grid-area: dark-new-age;
+
+}
+
+#radio-coapa {
+    grid-area: radio-coapa;
+
+}
+
+#circulo-de-lectura {
+    grid-area: CECTA;
+}
+
+#adorno-grande{
+    grid-area: adorno-g;
+
+}
+
+#Stream{
+    grid-area: stream;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.a_section a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+}
+
+.d_section{
+    margin: 4px;
+    padding: 4px;
+    overflow-y: scroll;
+    grid-area: content;
+}
+
+.img-div {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+
+.img-div img {
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    font-size: 1.1em;
+}
+
+nav{
+    background: repeating-radial-gradient(ellipse farthest-corner at 80% 70%, white, rgba(50, 55, 01, 0.3), rgb(166, 224, 60), rgb(31,191, 105) , white 77%);
+    padding: 20px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 25px;
+    flex-grow: 1;
+}
+
+.e_section{
+    grid-area: content;
+}
+
+#content_1, #content_2 , #content_3{
+    display: none;
+}
+
+.social_media{
+    padding-top: 10px;
+}
+
+i{
+    font-size: 20px;
+}
