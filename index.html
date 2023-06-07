@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>AASSP</title>
+        <title>ANDRÉS GA</title>
         <link rel="stylesheet" href="styles.css">
         <script src="scripts.js" charset="utf-8"></script>
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -12,7 +12,7 @@
         <div class="container" id="container">
 
             <div class="a_section">
-                <h1 id="logo" ><a href="#" data-content="content_1" class="butt">AASSP</a></h1>
+                <h1 id="logo" ><a href="#" data-content="content_1" class="butt">ANDRES GA</a></h1>
                 <nav>
 
                     <a href="#" data-content="content_2" class="butt">About</a>
@@ -24,23 +24,74 @@
 
 
             <div class="c_section content" id="content_1">
-                <div class="cosa" id="energia-increible"><h2><a href="https://aassp.bandcamp.com/album/energ-a-incre-ble">Energía Increíble LP</a></h2>
-                    <img src="images/0014497083_10.jpeg" alt="energia increíble cassettes">
+                <div class="cosa" id="web-development">
+                    <h2><a href="https://es.fiverr.com/s/E5oEl0">Fullstack web development</a></h2>
+                    <img src="images/101.png" alt="UI">
+                    <img src="images/001.png" alt="UI2">
                 </div>
-                <div class="cosa" id="dark-new-age"><h2><a href="https://voragine-sadrecords.bandcamp.com/album/dark-new-age">Dark new Age EP</a></h2>
+
+                <div class="cosa" id="marketing">
+                    <h2><a href="https://es.fiverr.com/s/E5oEl0">Content Writing</a></h2>
+                    <img src="images/twitter.png" alt="Marketing1">
+                    <img src="images/blog.png" alt="Marketing2">
+                </div>
+                <div class="cosa" id="energia-increible">
+                    <h2><a href="https://aassp.bandcamp.com/album/energ-a-incre-ble">Energía Increíble LP</a></h2>
+                    <img src="images/0014497083_10.jpeg" alt="UIshow">
+            
+            
+                </div>
+                <div class="cosa" id="dark-new-age">
+                    <h2><a href="https://voragine-sadrecords.bandcamp.com/album/dark-new-age">Dark new Age EP</a></h2>
                     <img src="images/a1992915393_10.jpeg" alt="Dark new Age by Diane Canterey">
                 </div>
-                <div class="cosa" id="radio-coapa"><a href="https://radiocoapa.wordpress.com/"><h2>Radio Coapa</h2></a>
+                <div class="cosa" id="radio-coapa"><a href="https://radiocoapa.wordpress.com/">
+                        <h2>Radio Coapa</h2>
+                    </a>
                     <img src="images/Captura de pantalla 2020-07-22 a la(s) 5.13.45 p.m..png" alt="Coapa mapa 3D">
                 </div>
-                <div class="cosa" id="circulo-de-lectura"><a href="https://circulodeestudiosdecodigo.herokuapp.com/"><h2>CECCT/A/</h2></a>
+                <div class="cosa" id="circulo-de-lectura"><a href="https://circulodeestudiosdecodigo.herokuapp.com/">
+                        <h2>CECCT/A/</h2>
+                    </a>
                     <img src="images/Captura de pantalla 2021-09-09 a la(s) 6.17.57 p.m..png" alt="Banner de CECCT/A/">
                 </div>
-                <div class="cosa" id="Stream"><a href="https://www.twitch.tv/aassp666"><h2>Twitch</h2></a>
-                <iframe class="videoplayer" src="http://www.twitch.tv/embed?channel=aassp666" height="478" width="800" frameborder="0" scrolling="no"></iframe>
+                <div class="cosa" id="Stream"><a href="https://www.twitch.tv/aassp666">
+                        <h2>Twitch</h2>
+                    </a>
+                    <div id="twitch-embed"></div>
+            
+                    <!-- Load the Twitch embed JavaScript file -->
+                    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                
+                    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+                    <script type="text/javascript">
+                        new Twitch.Embed("twitch-embed", {
+                            width: 854,
+                            height: 480,
+                            channel: "aassp666",
+                            // Only needed if this page is going to be embedded on other websites
+                            parent: ["embed.example.com", "othersite.example.com"]
+                        });
+                    </script>
                 </div>
+                <div id="twitch-embed"></div>
+            
+                <!-- Load the Twitch embed JavaScript file -->
+                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+            
+                <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+                <script type="text/javascript">
+                    new Twitch.Embed("twitch-embed", {
+                        width: 854,
+                        height: 480,
+                        channel: "",
+                        // Only needed if this page is going to be embedded on other websites
+                        parent: ["embed.example.com", "othersite.example.com"]
+                    });
+                </script>
                 <div class="cosa" id="adorno-chico"></div>
-                <div class="cosa" id="adorno-grande"><h2><a href="https://voragine-sadrecords.bandcamp.com/album/agradeciendo">Agradeciendo EP</a></h2>
+                <div class="cosa" id="adorno-grande">
+                    <h2><a href="https://voragine-sadrecords.bandcamp.com/album/agradeciendo">Agradeciendo EP</a></h2>
                     <img src="images/0025662151_100.png" alt="ilustracion de la bb">
                 </div>
             </div>
